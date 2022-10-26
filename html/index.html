@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html -->
+<html lang="" xml:lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>2 Design | SOPs for The Lab @ DC</title>
+  <meta name="description" content="Standard Operating Procedures for Experiments at The Lab @ DC.">
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7">
+
+  <meta property="og:title" content="2 Design | SOPs for The Lab @ DC">
+  <meta property="og:type" content="book">
+  
+  <meta property="og:description" content="Standard Operating Procedures for Experiments at The Lab @ DC.">
+  <meta name="github-repo" content="thelabdc/LAB-SOP-experiments">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="2 Design | SOPs for The Lab @ DC">
+  
+  <meta name="twitter:description" content="Standard Operating Procedures for Experiments at The Lab @ DC.">
+  
+
+<meta name="author" content="Ryan T. Moore">
+
+
+<meta name="date" content="2022-09-21">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/getting-started.html">
+<link rel="next" href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/implementation.html">
+<script src="./2 Design _ SOPs for The Lab @ DC_files/jquery-3.6.0.min.js.download"></script>
+<script src="./2 Design _ SOPs for The Lab @ DC_files/fuse.min.js.download"></script>
+<link href="./2 Design _ SOPs for The Lab @ DC_files/style.css" rel="stylesheet">
+<link href="./2 Design _ SOPs for The Lab @ DC_files/plugin-table.css" rel="stylesheet">
+<link href="./2 Design _ SOPs for The Lab @ DC_files/plugin-bookdown.css" rel="stylesheet">
+<link href="./2 Design _ SOPs for The Lab @ DC_files/plugin-highlight.css" rel="stylesheet">
+<link href="./2 Design _ SOPs for The Lab @ DC_files/plugin-search.css" rel="stylesheet">
+<link href="./2 Design _ SOPs for The Lab @ DC_files/plugin-fontsettings.css" rel="stylesheet">
+<link href="./2 Design _ SOPs for The Lab @ DC_files/plugin-clipboard.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+<link href="./2 Design _ SOPs for The Lab @ DC_files/anchor-sections.css" rel="stylesheet">
+<link href="./2 Design _ SOPs for The Lab @ DC_files/anchor-sections-hash.css" rel="stylesheet">
+<script src="./2 Design _ SOPs for The Lab @ DC_files/anchor-sections.js.download"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="./2 Design _ SOPs for The Lab @ DC_files/style(1).css" type="text/css">
+<script type="text/javascript" async="" src="./2 Design _ SOPs for The Lab @ DC_files/MathJax.js.download"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888; display: contents}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.mjx-chtml {display: inline-block; line-height: 0; text-indent: 0; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; letter-spacing: normal; word-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; margin: 0; padding: 1px 0}
+.MJXc-display {display: block; text-align: center; margin: 1em 0; padding: 0}
+.mjx-chtml[tabindex]:focus, body :focus .mjx-chtml[tabindex] {display: inline-table}
+.mjx-full-width {text-align: center; display: table-cell!important; width: 10000em}
+.mjx-math {display: inline-block; border-collapse: separate; border-spacing: 0}
+.mjx-math * {display: inline-block; -webkit-box-sizing: content-box!important; -moz-box-sizing: content-box!important; box-sizing: content-box!important; text-align: left}
+.mjx-numerator {display: block; text-align: center}
+.mjx-denominator {display: block; text-align: center}
+.MJXc-stacked {height: 0; position: relative}
+.MJXc-stacked > * {position: absolute}
+.MJXc-bevelled > * {display: inline-block}
+.mjx-stack {display: inline-block}
+.mjx-op {display: block}
+.mjx-under {display: table-cell}
+.mjx-over {display: block}
+.mjx-over > * {padding-left: 0px!important; padding-right: 0px!important}
+.mjx-under > * {padding-left: 0px!important; padding-right: 0px!important}
+.mjx-stack > .mjx-sup {display: block}
+.mjx-stack > .mjx-sub {display: block}
+.mjx-prestack > .mjx-presup {display: block}
+.mjx-prestack > .mjx-presub {display: block}
+.mjx-delim-h > .mjx-char {display: inline-block}
+.mjx-surd {vertical-align: top}
+.mjx-surd + .mjx-box {display: inline-flex}
+.mjx-mphantom * {visibility: hidden}
+.mjx-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 2px 3px; font-style: normal; font-size: 90%}
+.mjx-annotation-xml {line-height: normal}
+.mjx-menclose > svg {fill: none; stroke: currentColor; overflow: visible}
+.mjx-mtr {display: table-row}
+.mjx-mlabeledtr {display: table-row}
+.mjx-mtd {display: table-cell; text-align: center}
+.mjx-label {display: table-row}
+.mjx-box {display: inline-block}
+.mjx-block {display: block}
+.mjx-span {display: inline}
+.mjx-char {display: block; white-space: pre}
+.mjx-itable {display: inline-table; width: auto}
+.mjx-row {display: table-row}
+.mjx-cell {display: table-cell}
+.mjx-table {display: table; width: 100%}
+.mjx-line {display: block; height: 0}
+.mjx-strut {width: 0; padding-top: 1em}
+.mjx-vsize {width: 0}
+.MJXc-space1 {margin-left: .167em}
+.MJXc-space2 {margin-left: .222em}
+.MJXc-space3 {margin-left: .278em}
+.mjx-chartest {display: block; visibility: hidden; position: absolute; top: 0; line-height: normal; font-size: 500%}
+.mjx-chartest .mjx-char {display: inline}
+.mjx-chartest .mjx-box {padding-top: 1000px}
+.MJXc-processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MJXc-processed {display: none}
+.mjx-test {font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow: hidden; height: 1px}
+.mjx-test.mjx-test-display {display: table!important}
+.mjx-test.mjx-test-inline {display: inline!important; margin-right: -1px}
+.mjx-test.mjx-test-default {display: block!important; clear: both}
+.mjx-ex-box {display: inline-block!important; position: absolute; overflow: hidden; min-height: 0; max-height: none; padding: 0; border: 0; margin: 0; width: 1px; height: 60ex}
+.mjx-test-inline .mjx-left-box {display: inline-block; width: 0; float: left}
+.mjx-test-inline .mjx-right-box {display: inline-block; width: 0; float: right}
+.mjx-test-display .mjx-right-box {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+#MathJax_CHTML_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.mjx-chtml .mjx-noError {line-height: 1.2; vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+.MJXc-TeX-unknown-R {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: normal; font-weight: normal}
+.MJXc-TeX-unknown-I {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: italic; font-weight: normal}
+.MJXc-TeX-unknown-B {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: normal; font-weight: bold}
+.MJXc-TeX-unknown-BI {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: italic; font-weight: bold}
+.MJXc-TeX-ams-R {font-family: MJXc-TeX-ams-R,MJXc-TeX-ams-Rw}
+.MJXc-TeX-cal-B {font-family: MJXc-TeX-cal-B,MJXc-TeX-cal-Bx,MJXc-TeX-cal-Bw}
+.MJXc-TeX-frak-R {font-family: MJXc-TeX-frak-R,MJXc-TeX-frak-Rw}
+.MJXc-TeX-frak-B {font-family: MJXc-TeX-frak-B,MJXc-TeX-frak-Bx,MJXc-TeX-frak-Bw}
+.MJXc-TeX-math-BI {font-family: MJXc-TeX-math-BI,MJXc-TeX-math-BIx,MJXc-TeX-math-BIw}
+.MJXc-TeX-sans-R {font-family: MJXc-TeX-sans-R,MJXc-TeX-sans-Rw}
+.MJXc-TeX-sans-B {font-family: MJXc-TeX-sans-B,MJXc-TeX-sans-Bx,MJXc-TeX-sans-Bw}
+.MJXc-TeX-sans-I {font-family: MJXc-TeX-sans-I,MJXc-TeX-sans-Ix,MJXc-TeX-sans-Iw}
+.MJXc-TeX-script-R {font-family: MJXc-TeX-script-R,MJXc-TeX-script-Rw}
+.MJXc-TeX-type-R {font-family: MJXc-TeX-type-R,MJXc-TeX-type-Rw}
+.MJXc-TeX-cal-R {font-family: MJXc-TeX-cal-R,MJXc-TeX-cal-Rw}
+.MJXc-TeX-main-B {font-family: MJXc-TeX-main-B,MJXc-TeX-main-Bx,MJXc-TeX-main-Bw}
+.MJXc-TeX-main-I {font-family: MJXc-TeX-main-I,MJXc-TeX-main-Ix,MJXc-TeX-main-Iw}
+.MJXc-TeX-main-R {font-family: MJXc-TeX-main-R,MJXc-TeX-main-Rw}
+.MJXc-TeX-math-I {font-family: MJXc-TeX-math-I,MJXc-TeX-math-Ix,MJXc-TeX-math-Iw}
+.MJXc-TeX-size1-R {font-family: MJXc-TeX-size1-R,MJXc-TeX-size1-Rw}
+.MJXc-TeX-size2-R {font-family: MJXc-TeX-size2-R,MJXc-TeX-size2-Rw}
+.MJXc-TeX-size3-R {font-family: MJXc-TeX-size3-R,MJXc-TeX-size3-Rw}
+.MJXc-TeX-size4-R {font-family: MJXc-TeX-size4-R,MJXc-TeX-size4-Rw}
+.MJXc-TeX-vec-R {font-family: MJXc-TeX-vec-R,MJXc-TeX-vec-Rw}
+.MJXc-TeX-vec-B {font-family: MJXc-TeX-vec-B,MJXc-TeX-vec-Bx,MJXc-TeX-vec-Bw}
+@font-face {font-family: MJXc-TeX-ams-R; src: local('MathJax_AMS'), local('MathJax_AMS-Regular')}
+@font-face {font-family: MJXc-TeX-ams-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_AMS-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_AMS-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-cal-B; src: local('MathJax_Caligraphic Bold'), local('MathJax_Caligraphic-Bold')}
+@font-face {font-family: MJXc-TeX-cal-Bx; src: local('MathJax_Caligraphic'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-cal-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-frak-R; src: local('MathJax_Fraktur'), local('MathJax_Fraktur-Regular')}
+@font-face {font-family: MJXc-TeX-frak-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-frak-B; src: local('MathJax_Fraktur Bold'), local('MathJax_Fraktur-Bold')}
+@font-face {font-family: MJXc-TeX-frak-Bx; src: local('MathJax_Fraktur'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-frak-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-math-BI; src: local('MathJax_Math BoldItalic'), local('MathJax_Math-BoldItalic')}
+@font-face {font-family: MJXc-TeX-math-BIx; src: local('MathJax_Math'); font-weight: bold; font-style: italic}
+@font-face {font-family: MJXc-TeX-math-BIw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Math-BoldItalic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Math-BoldItalic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Math-BoldItalic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-R; src: local('MathJax_SansSerif'), local('MathJax_SansSerif-Regular')}
+@font-face {font-family: MJXc-TeX-sans-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-B; src: local('MathJax_SansSerif Bold'), local('MathJax_SansSerif-Bold')}
+@font-face {font-family: MJXc-TeX-sans-Bx; src: local('MathJax_SansSerif'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-sans-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-I; src: local('MathJax_SansSerif Italic'), local('MathJax_SansSerif-Italic')}
+@font-face {font-family: MJXc-TeX-sans-Ix; src: local('MathJax_SansSerif'); font-style: italic}
+@font-face {font-family: MJXc-TeX-sans-Iw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Italic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Italic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-script-R; src: local('MathJax_Script'), local('MathJax_Script-Regular')}
+@font-face {font-family: MJXc-TeX-script-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Script-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Script-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-type-R; src: local('MathJax_Typewriter'), local('MathJax_Typewriter-Regular')}
+@font-face {font-family: MJXc-TeX-type-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Typewriter-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Typewriter-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Typewriter-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-cal-R; src: local('MathJax_Caligraphic'), local('MathJax_Caligraphic-Regular')}
+@font-face {font-family: MJXc-TeX-cal-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-B; src: local('MathJax_Main Bold'), local('MathJax_Main-Bold')}
+@font-face {font-family: MJXc-TeX-main-Bx; src: local('MathJax_Main'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-main-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Main-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-I; src: local('MathJax_Main Italic'), local('MathJax_Main-Italic')}
+@font-face {font-family: MJXc-TeX-main-Ix; src: local('MathJax_Main'); font-style: italic}
+@font-face {font-family: MJXc-TeX-main-Iw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Main-Italic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-R; src: local('MathJax_Main'), local('MathJax_Main-Regular')}
+@font-face {font-family: MJXc-TeX-main-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Main-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-math-I; src: local('MathJax_Math Italic'), local('MathJax_Math-Italic')}
+@font-face {font-family: MJXc-TeX-math-Ix; src: local('MathJax_Math'); font-style: italic}
+@font-face {font-family: MJXc-TeX-math-Iw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Math-Italic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size1-R; src: local('MathJax_Size1'), local('MathJax_Size1-Regular')}
+@font-face {font-family: MJXc-TeX-size1-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Size1-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size2-R; src: local('MathJax_Size2'), local('MathJax_Size2-Regular')}
+@font-face {font-family: MJXc-TeX-size2-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Size2-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size3-R; src: local('MathJax_Size3'), local('MathJax_Size3-Regular')}
+@font-face {font-family: MJXc-TeX-size3-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Size3-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size4-R; src: local('MathJax_Size4'), local('MathJax_Size4-Regular')}
+@font-face {font-family: MJXc-TeX-size4-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-vec-R; src: local('MathJax_Vector'), local('MathJax_Vector-Regular')}
+@font-face {font-family: MJXc-TeX-vec-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Vector-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Vector-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Vector-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-vec-B; src: local('MathJax_Vector Bold'), local('MathJax_Vector-Bold')}
+@font-face {font-family: MJXc-TeX-vec-Bx; src: local('MathJax_Vector'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-vec-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/eot/MathJax_Vector-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/woff/MathJax_Vector-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/fonts/HTML-CSS/TeX/otf/MathJax_Vector-Bold.otf') format('opentype')}
+</style></head>
+
+<body><div id="MathJax_Message" style="display: none;"></div>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/">SOPs for The Lab @ DC</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/index.html"><i class="fa fa-check"></i>Preface</a>
+<ul style="display: none;">
+<li class="chapter" data-level="" data-path="index.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/index.html#colophon"><i class="fa fa-check"></i>Colophon</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="getting-started.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/getting-started.html"><i class="fa fa-check"></i><b>1</b> Getting Started</a></li>
+<li class="chapter active" data-level="2" data-path="design.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html"><i class="fa fa-check"></i><b>2</b> Design</a>
+<ul style="">
+<li class="chapter" data-level="2.1" data-path="design.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#units"><i class="fa fa-check"></i><b>2.1</b> Units</a></li>
+<li class="chapter" data-level="2.2" data-path="design.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#level-of-randomization"><i class="fa fa-check"></i><b>2.2</b> Level of Randomization</a></li>
+<li class="chapter" data-level="2.3" data-path="design.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#blocking-on-background-characteristics" title="2.3 Blocking on Background Characteristics"><i class="fa fa-check"></i><b>2.3</b> Blocking on Background Characteristics</a>
+<ul style="display: none;">
+<li class="chapter" data-level="2.3.1" data-path="design.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#examples"><i class="fa fa-check"></i><b>2.3.1</b> Examples</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="design.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#sec-set-seed"><i class="fa fa-check"></i><b>2.4</b> Setting the Assignment Seed</a></li>
+<li class="chapter" data-level="2.5" data-path="design.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#power"><i class="fa fa-check"></i><b>2.5</b> Power</a>
+<ul style="display: none;">
+<li class="chapter" data-level="2.5.1" data-path="design.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#formula-based-power-analysis"><i class="fa fa-check"></i><b>2.5.1</b> Formula-based Power Analysis</a></li>
+<li class="chapter" data-level="2.5.2" data-path="design.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#simulation-based-power-analysis"><i class="fa fa-check"></i><b>2.5.2</b> Simulation-based Power Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="design.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#balance-checking"><i class="fa fa-check"></i><b>2.6</b> Balance Checking</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="implementation.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/implementation.html"><i class="fa fa-check"></i><b>3</b> Implementation</a></li>
+<li class="chapter" data-level="4" data-path="analysis.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/analysis.html"><i class="fa fa-check"></i><b>4</b> Analysis</a>
+<ul style="display: none;">
+<li class="chapter" data-level="4.1" data-path="analysis.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/analysis.html#notation"><i class="fa fa-check"></i><b>4.1</b> Notation</a></li>
+<li class="chapter" data-level="4.2" data-path="analysis.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/analysis.html#estimands"><i class="fa fa-check"></i><b>4.2</b> Estimands</a></li>
+<li class="chapter" data-level="4.3" data-path="analysis.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/analysis.html#sec-unadj-itt"><i class="fa fa-check"></i><b>4.3</b> The Unadjusted ITT</a></li>
+<li class="chapter" data-level="4.4" data-path="analysis.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/analysis.html#sec-lin"><i class="fa fa-check"></i><b>4.4</b> Adjusting for covariates</a></li>
+<li class="chapter" data-level="4.5" data-path="analysis.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/analysis.html#clusters-weights-fixed-effects"><i class="fa fa-check"></i><b>4.5</b> Clusters, weights, fixed effects</a>
+<ul style="display: none;">
+<li class="chapter" data-level="4.5.1" data-path="analysis.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/analysis.html#weights"><i class="fa fa-check"></i><b>4.5.1</b> Weights</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="analysis.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/analysis.html#sec-rand-inf"><i class="fa fa-check"></i><b>4.6</b> Randomization Inference</a></li>
+<li class="chapter" data-level="4.7" data-path="analysis.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/analysis.html#addressing-non-compliance"><i class="fa fa-check"></i><b>4.7</b> Addressing non-compliance</a></li>
+<li class="chapter" data-level="4.8" data-path="analysis.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/analysis.html#missing-data"><i class="fa fa-check"></i><b>4.8</b> Missing Data</a></li>
+<li class="chapter" data-level="4.9" data-path="analysis.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/analysis.html#multiple-comparisons"><i class="fa fa-check"></i><b>4.9</b> Multiple Comparisons</a>
+<ul style="display: none;">
+<li class="chapter" data-level="4.9.1" data-path="analysis.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/analysis.html#holm-bonferroni-adjustment"><i class="fa fa-check"></i><b>4.9.1</b> Holm-Bonferroni adjustment</a></li>
+<li class="chapter" data-level="4.9.2" data-path="analysis.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/analysis.html#westfall-young-adjustment"><i class="fa fa-check"></i><b>4.9.2</b> Westfall-Young adjustment</a></li>
+</ul></li>
+<li class="chapter" data-level="4.10" data-path="analysis.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/analysis.html#posterior-probabilities"><i class="fa fa-check"></i><b>4.10</b> Posterior Probabilities</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html"><i class="fa fa-check"></i><b>5</b> Publication</a></li>
+<li class="chapter" data-level="" data-path=""><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#appendix-appendix"><i class="fa fa-check"></i>(APPENDIX) Appendix</a>
+<ul style="display: none;">
+<li class="chapter" data-level="5.1" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#get-r-and-rstudio"><i class="fa fa-check"></i><b>5.1</b> Get R and RStudio</a></li>
+<li class="chapter" data-level="5.2" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#read-in-data-files"><i class="fa fa-check"></i><b>5.2</b> Read in data files</a>
+<ul style="display: none;">
+<li class="chapter" data-level="5.2.1" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#csv"><i class="fa fa-check"></i><b>5.2.1</b> <code>.csv</code></a></li>
+<li class="chapter" data-level="5.2.2" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#xlsx"><i class="fa fa-check"></i><b>5.2.2</b> <code>.xlsx</code></a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#pipes"><i class="fa fa-check"></i><b>5.3</b> Pipes</a></li>
+<li class="chapter" data-level="5.4" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#rename-variables"><i class="fa fa-check"></i><b>5.4</b> Rename variables</a></li>
+<li class="chapter" data-level="5.5" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#create-a-new-variable"><i class="fa fa-check"></i><b>5.5</b> Create a New Variable</a>
+<ul style="display: none;">
+<li class="chapter" data-level="5.5.1" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#create-a-wave-id"><i class="fa fa-check"></i><b>5.5.1</b> Create a “wave ID”</a></li>
+<li class="chapter" data-level="5.5.2" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#create-a-primary-key"><i class="fa fa-check"></i><b>5.5.2</b> Create a primary key</a></li>
+<li class="chapter" data-level="5.5.3" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#transform-an-existing-variable"><i class="fa fa-check"></i><b>5.5.3</b> Transform an existing variable</a></li>
+<li class="chapter" data-level="5.5.4" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#create-a-sum-of-from-subset-of-variables"><i class="fa fa-check"></i><b>5.5.4</b> Create a sum of from subset of variables</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#recode-a-variables-values"><i class="fa fa-check"></i><b>5.6</b> Recode a variable’s values</a></li>
+<li class="chapter" data-level="5.7" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#treat-dates-as-dates"><i class="fa fa-check"></i><b>5.7</b> Treat dates as dates</a>
+<ul style="display: none;">
+<li class="chapter" data-level="5.7.1" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#make-an-age-variable"><i class="fa fa-check"></i><b>5.7.1</b> Make an age variable</a></li>
+<li class="chapter" data-level="5.7.2" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#make-a-month-count-variable"><i class="fa fa-check"></i><b>5.7.2</b> Make a month-count variable</a></li>
+</ul></li>
+<li class="chapter" data-level="5.8" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#sec-create-treatment"><i class="fa fa-check"></i><b>5.8</b> Create a completely randomised indicator</a></li>
+<li class="chapter" data-level="5.9" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#plot-a-variable"><i class="fa fa-check"></i><b>5.9</b> Plot a variable</a></li>
+<li class="chapter" data-level="5.10" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#calculate-a-data-summary"><i class="fa fa-check"></i><b>5.10</b> Calculate a data summary</a>
+<ul style="display: none;">
+<li class="chapter" data-level="5.10.1" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#proportions-for-a-categorical-variable"><i class="fa fa-check"></i><b>5.10.1</b> Proportions for a categorical variable</a></li>
+<li class="chapter" data-level="5.10.2" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#proportions-for-binary-variables"><i class="fa fa-check"></i><b>5.10.2</b> Proportions for binary variables</a></li>
+</ul></li>
+<li class="chapter" data-level="5.11" data-path="publication.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/publication.html#merge-join-dataframes"><i class="fa fa-check"></i><b>5.11</b> Merge (join) dataframes</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="managing-code.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/managing-code.html"><i class="fa fa-check"></i><b>6</b> Managing Code</a>
+<ul style="display: none;">
+<li class="chapter" data-level="6.1" data-path="managing-code.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/managing-code.html#best-practices"><i class="fa fa-check"></i><b>6.1</b> Best Practices</a></li>
+<li class="chapter" data-level="6.2" data-path="managing-code.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/managing-code.html#style"><i class="fa fa-check"></i><b>6.2</b> Style</a></li>
+<li class="chapter" data-level="6.3" data-path="managing-code.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/managing-code.html#sec-projects"><i class="fa fa-check"></i><b>6.3</b> Projects</a></li>
+<li class="chapter" data-level="6.4" data-path="managing-code.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/managing-code.html#sec-working-dir"><i class="fa fa-check"></i><b>6.4</b> Working Directory and Relative Paths</a>
+<ul style="display: none;">
+<li class="chapter" data-level="6.4.1" data-path="managing-code.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/managing-code.html#see-the-working-directory"><i class="fa fa-check"></i><b>6.4.1</b> See the working directory</a></li>
+<li class="chapter" data-level="6.4.2" data-path="managing-code.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/managing-code.html#see-the-project-directory"><i class="fa fa-check"></i><b>6.4.2</b> See the project directory</a></li>
+<li class="chapter" data-level="6.4.3" data-path="managing-code.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/managing-code.html#create-a-path-with-here"><i class="fa fa-check"></i><b>6.4.3</b> Create a path with <code>here()</code></a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="managing-code.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/managing-code.html#what-packages-are-installed"><i class="fa fa-check"></i><b>6.5</b> What Packages are Installed?</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="getting-started-with-git-and-github.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/getting-started-with-git-and-github.html"><i class="fa fa-check"></i><b>7</b> Getting Started with <code>git</code> and GitHub</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body fixed">
+      <div class="body-inner">
+        <div class="book-header fixed" role="navigation" style="background-color: rgb(255, 255, 255);">
+          <a class="btn pull-left js-toolbar-action" aria-label="Toggle Sidebar" title="Toggle Sidebar" href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#"><i class="fa fa-align-justify"></i></a><a class="btn pull-left js-toolbar-action" aria-label="Search" title="Search" href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#"><i class="fa fa-search"></i></a><div class="dropdown pull-right js-toolbar-action"><a class="btn toggle-dropdown" aria-label="Share" title="Share" href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#"><i class="fa fa-share-alt"></i></a><div class="dropdown-menu dropdown-left"><div class="dropdown-caret"><span class="caret-outer"></span><span class="caret-inner"></span></div><div class="buttons"><button class="button size-5 ">Facebook</button><button class="button size-5 ">Twitter</button><button class="button size-5 ">LinkedIn</button><button class="button size-5 ">Weibo</button><button class="button size-5 ">Instapaper</button></div></div></div><a class="btn pull-right js-toolbar-action" aria-label="Facebook" title="Facebook" href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#"><i class="fa fa-facebook"></i></a><a class="btn pull-right js-toolbar-action" aria-label="Twitter" title="Twitter" href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#"><i class="fa fa-twitter"></i></a><div class="dropdown pull-left font-settings js-toolbar-action"><a class="btn toggle-dropdown" aria-label="Font Settings" title="Font Settings" href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#"><i class="fa fa-font"></i></a><div class="dropdown-menu dropdown-right"><div class="dropdown-caret"><span class="caret-outer"></span><span class="caret-inner"></span></div><div class="buttons"><button class="button size-2 font-reduce">A</button><button class="button size-2 font-enlarge">A</button></div><div class="buttons"><button class="button size-2 ">Serif</button><button class="button size-2 ">Sans</button></div><div class="buttons"><button class="button size-3 ">White</button><button class="button size-3 ">Sepia</button><button class="button size-3 ">Night</button></div></div></div><a class="btn pull-left js-toolbar-action" aria-label="Information about the toolbar" title="Information about the toolbar" href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#"><i class="fa fa-info"></i></a><h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/">SOPs for The Lab @ DC</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="design" class="section level1" number="2">
+<h1 class="hasAnchor"><span class="header-section-number">2</span> Design<a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#design" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="units" class="section level2" number="2.1">
+<h2 class="hasAnchor"><span class="header-section-number">2.1</span> Units<a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#units" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We carefully define the units of observation. They maybe households, automobile
+registrations, 911 callers, or students, about which we are measuring
+application status, traffic tickets, primary care visits, or days of attendance
+in school, respectively.</p>
+</div>
+<div id="level-of-randomization" class="section level2" number="2.2">
+<h2 class="hasAnchor"><span class="header-section-number">2.2</span> Level of Randomization<a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#level-of-randomization" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We define the level of randomization, which is not always the same as
+the unit of observation. In particular, the units of observation may be assigned
+in <em>clusters</em>. For example, we may assign some <em>classrooms</em> to a particular
+teacher-based intervention, and all students in intervention classrooms are
+assigned to the same intervention. When clusters are meaningful, this has
+substantial implications for our design and analysis.</p>
+<p>Generally, we prefer to randomize at lower levels of aggregation – at the
+student level rather than the classroom level, e.g.&nbsp;– because we will have more
+randomization units. However, there are often logistical or statistical reasons
+for assigning conditions in clusters. For example, logistically, a teacher can
+only deliver one particular curriculum to their class; statistically, we may be
+concerned about interference between students, where students in one condition
+interact with students in the other, and causal effects of the intervention are
+difficult to isolate.</p>
+</div>
+<div id="blocking-on-background-characteristics" class="section level2" number="2.3">
+<h2 class="hasAnchor"><span class="header-section-number">2.3</span> Blocking on Background Characteristics<a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#blocking-on-background-characteristics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In order to create balance on potential outcomes, which promotes less estimation error and more precision, we block using prognostic covariates. A <em>blocked</em> randomization first creates groups of similar randomization units, and then randomizes within those groups. In a <em>random allocation</em>, by contrast, one assigns a proportion of units to each treatment condition from a single pool. See <span class="citation">Moore (<a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#ref-moore12" role="doc-biblioref">2012</a>)</span> for discussion.</p>
+<div id="examples" class="section level3" number="2.3.1">
+<h3 class="hasAnchor"><span class="header-section-number">2.3.1</span> Examples<a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#examples" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The Lab’s TANF recertification experiment <span class="citation">(<a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#ref-mooganmin22" role="doc-biblioref">Moore et al. 2022</a>)</span> blocked participants on
+service center and assigned visit date.</p>
+</div>
+</div>
+<div id="sec-set-seed" class="section level2" number="2.4">
+<h2 class="hasAnchor"><span class="header-section-number">2.4</span> Setting the Assignment Seed<a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#sec-set-seed" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Whenever our design or analysis involves randomization, we set the seed so that
+our results can be perfectly replicated.<a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<p>To set the random seed, run at the R prompt</p>
+<div class="sourceCode" id="cb1"><button type="button" class="copy-to-clipboard-button" title="Copy to clipboard" aria-label="Copy to clipboard"><i class="fa fa-copy"></i></button><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(<span class="fl">1e9</span>, <span class="dv">1</span>)</span></code></pre></div>
+<p>then copy and paste the result as the argument of <code>set.seed()</code>. If the result of
+<code>sample(1e9, 1)</code> is <code>SSSSSSSSS</code>, then put</p>
+<div class="sourceCode" id="cb2"><button type="button" class="copy-to-clipboard-button" title="Copy to clipboard" aria-label="Copy to clipboard"><i class="fa fa-copy"></i></button><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(SSSSSSSSS)</span></code></pre></div>
+<p>at the top of the <code>.R</code> file, just after the <code>library()</code> commands that load and
+attach that file’s packages. In a short random assignment file, e.g., we might
+have</p>
+<div class="sourceCode" id="cb3"><button type="button" class="copy-to-clipboard-button" title="Copy to clipboard" aria-label="Copy to clipboard"><i class="fa fa-copy"></i></button><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Packages:</span></span>
+<span id="cb3-2"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr) </span>
+<span id="cb3-3"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Set seed:</span></span>
+<span id="cb3-5"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(SSSSSSSSS)</span>
+<span id="cb3-6"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Conduct Bernoulli randomization:</span></span>
+<span id="cb3-8"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb3-8" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(</span>
+<span id="cb3-9"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">treatment =</span> <span class="fu">sample</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">1</span>, </span>
+<span id="cb3-10"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb3-10" aria-hidden="true" tabindex="-1"></a>                     <span class="at">size =</span> <span class="fu">n</span>(),</span>
+<span id="cb3-11"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb3-11" aria-hidden="true" tabindex="-1"></a>                     <span class="at">replace =</span> <span class="cn">TRUE</span>))</span></code></pre></div>
+</div>
+<div id="power" class="section level2" number="2.5">
+<h2 class="hasAnchor"><span class="header-section-number">2.5</span> Power<a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#power" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We conduct power analysis to determine how precise our experiment are likely to
+be. Power analysis should go beyond sample size, and attempt to account for as
+many features of the design, implementation, and analysis as possible. Sometimes
+we can achieve this with “formula-based” power strategies; other times we need
+to use simulation-based techniques. Power analyses should be conducted in code,
+so that they are replicable. If we use an online calculator for a quick
+calculation, we replicate the results in code.<a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p>If our design and analysis plan match the assumptions of a formula-based power
+calculation well, we perform a formula-based power calculation. For example, if
+the design is complete randomization and the analysis plan is to conduct a
+two-sample <span class="math inline"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-1-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="font-size: 117%; position: relative;"><span id="MJXc-Node-1" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-2" class="mjx-mrow"><span id="MJXc-Node-3" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.27em;">t</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi></math></span></span><script type="math/tex" id="MathJax-Element-1">t</script></span>-test, we might use R’s <code>power.t.test()</code>, as below. However, if
+the design includes blocked assignment in several waves, untreated units stay in
+the pool across waves, and assignment probabilities vary by wave, with an
+analysis plan of covariance-adjusted Lin <a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/analysis.html#sec-lin">estimation</a> with strong
+covariates, then we need to use simulation. If we can’t find a formula-based
+approach that sufficiently approximates our design and analysis plan, we use
+simulation.</p>
+<div id="formula-based-power-analysis" class="section level3" number="2.5.1">
+<h3 class="hasAnchor"><span class="header-section-number">2.5.1</span> Formula-based Power Analysis<a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#formula-based-power-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>An example of formula-based power calculation, where the design is complete randomization and the analysis plans for a two-sample <span class="math inline"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-2-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="font-size: 117%; position: relative;"><span id="MJXc-Node-4" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-5" class="mjx-mrow"><span id="MJXc-Node-6" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.27em;">t</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi></math></span></span><script type="math/tex" id="MathJax-Element-2">t</script></span>-test:</p>
+<div class="sourceCode" id="cb4"><button type="button" class="copy-to-clipboard-button" title="Copy to clipboard" aria-label="Copy to clipboard"><i class="fa fa-copy"></i></button><pre class="sourceCode r fold.hide"><code class="sourceCode r"><span id="cb4-1"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb4-1" aria-hidden="true" tabindex="-1"></a>power_out <span class="ot">&lt;-</span> <span class="fu">power.t.test</span>(<span class="at">delta =</span> <span class="dv">1</span>, </span>
+<span id="cb4-2"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb4-2" aria-hidden="true" tabindex="-1"></a>                          <span class="at">sd =</span> <span class="dv">1</span>,</span>
+<span id="cb4-3"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb4-3" aria-hidden="true" tabindex="-1"></a>                          <span class="at">sig.level =</span> <span class="fl">0.05</span>,</span>
+<span id="cb4-4"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb4-4" aria-hidden="true" tabindex="-1"></a>                          <span class="at">power =</span> <span class="fl">0.8</span>)</span>
+<span id="cb4-5"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb4-5" aria-hidden="true" tabindex="-1"></a>power_out</span></code></pre></div>
+<pre><code>## 
+##      Two-sample t test power calculation 
+## 
+##               n = 16.71477
+##           delta = 1
+##              sd = 1
+##       sig.level = 0.05
+##           power = 0.8
+##     alternative = two.sided
+## 
+## NOTE: n is number in *each* group</code></pre>
+<p>For two equally-sized samples drawn from a population with standard normal outcomes, we need 17 observations in each group to have a probability of 0.8 of detecting a true effect that is one standard deviation of the outcome in size, where “detecting” means rejecting a null hypothesis of <span class="math inline"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-3-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msub&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/msub&gt;&lt;mo&gt;:&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x03BC;&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x03BC;&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;/math&gt;" role="presentation" style="font-size: 117%; position: relative;"><span id="MJXc-Node-7" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-8" class="mjx-mrow"><span id="MJXc-Node-9" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.057em;"><span id="MJXc-Node-10" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.27em; padding-right: 0.057em;">H</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-11" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.377em; padding-bottom: 0.377em;">0</span></span></span></span><span id="MJXc-Node-12" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.163em; padding-bottom: 0.323em;">:</span></span><span id="MJXc-Node-13" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-14" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.216em; padding-bottom: 0.483em;">μ</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-15" class="mjx-texatom" style=""><span id="MJXc-Node-16" class="mjx-mrow"><span id="MJXc-Node-17" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.27em; padding-right: 0.12em;">T</span></span><span id="MJXc-Node-18" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.216em; padding-bottom: 0.27em;">r</span></span></span></span></span></span><span id="MJXc-Node-19" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.056em; padding-bottom: 0.323em;">=</span></span><span id="MJXc-Node-20" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-21" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.216em; padding-bottom: 0.483em;">μ</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.23em; padding-right: 0.071em;"><span id="MJXc-Node-22" class="mjx-texatom" style=""><span id="MJXc-Node-23" class="mjx-mrow"><span id="MJXc-Node-24" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.323em; padding-right: 0.045em;">C</span></span><span id="MJXc-Node-25" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.216em; padding-bottom: 0.27em;">o</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo><msub><mi>μ</mi><mrow class="MJX-TeXAtom-ORD"><mi>T</mi><mi>r</mi></mrow></msub><mo>=</mo><msub><mi>μ</mi><mrow class="MJX-TeXAtom-ORD"><mi>C</mi><mi>o</mi></mrow></msub></math></span></span><script type="math/tex" id="MathJax-Element-3">H_0: \mu_{Tr} = \mu_{Co}</script></span> against an alternative of <span class="math inline"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-4-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msub&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;:&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x03BC;&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;&amp;#x2260;&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x03BC;&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;/math&gt;" role="presentation" style="font-size: 117%; position: relative;"><span id="MJXc-Node-26" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-27" class="mjx-mrow"><span id="MJXc-Node-28" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.057em;"><span id="MJXc-Node-29" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.27em; padding-right: 0.057em;">H</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-30" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.216em; padding-bottom: 0.27em;">a</span></span></span></span><span id="MJXc-Node-31" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.163em; padding-bottom: 0.323em;">:</span></span><span id="MJXc-Node-32" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-33" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.216em; padding-bottom: 0.483em;">μ</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-34" class="mjx-texatom" style=""><span id="MJXc-Node-35" class="mjx-mrow"><span id="MJXc-Node-36" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.27em; padding-right: 0.12em;">T</span></span><span id="MJXc-Node-37" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.216em; padding-bottom: 0.27em;">r</span></span></span></span></span></span><span id="MJXc-Node-38" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.43em; padding-bottom: 0.537em;">≠</span></span><span id="MJXc-Node-39" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-40" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.216em; padding-bottom: 0.483em;">μ</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.23em; padding-right: 0.071em;"><span id="MJXc-Node-41" class="mjx-texatom" style=""><span id="MJXc-Node-42" class="mjx-mrow"><span id="MJXc-Node-43" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.323em; padding-right: 0.045em;">C</span></span><span id="MJXc-Node-44" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.216em; padding-bottom: 0.27em;">o</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>H</mi><mi>a</mi></msub><mo>:</mo><msub><mi>μ</mi><mrow class="MJX-TeXAtom-ORD"><mi>T</mi><mi>r</mi></mrow></msub><mo>≠</mo><msub><mi>μ</mi><mrow class="MJX-TeXAtom-ORD"><mi>C</mi><mi>o</mi></mrow></msub></math></span></span><script type="math/tex" id="MathJax-Element-4">H_a: \mu_{Tr} \neq \mu_{Co}</script></span> using <span class="math inline"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-5-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;&amp;#x03B1;&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;0.05&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="font-size: 117%; position: relative;"><span id="MJXc-Node-45" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-46" class="mjx-mrow"><span id="MJXc-Node-47" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.216em; padding-bottom: 0.27em;">α</span></span><span id="MJXc-Node-48" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.056em; padding-bottom: 0.323em;">=</span></span><span id="MJXc-Node-49" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.377em; padding-bottom: 0.377em;">0.05</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>α</mi><mo>=</mo><mn>0.05</mn></math></span></span><script type="math/tex" id="MathJax-Element-5">\alpha = 0.05</script></span>.</p>
+</div>
+<div id="simulation-based-power-analysis" class="section level3" number="2.5.2">
+<h3 class="hasAnchor"><span class="header-section-number">2.5.2</span> Simulation-based Power Analysis<a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#simulation-based-power-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Simulation-based power analysis allows us to estimate the power of any
+combination of randomization technique, missing data treatment, estimation
+strategy, etc. that we like.</p>
+<p>Create some data to illustrate simulation-based power analysis:</p>
+<div class="sourceCode" id="cb6"><button type="button" class="copy-to-clipboard-button" title="Copy to clipboard" aria-label="Copy to clipboard"><i class="fa fa-copy"></i></button><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(estimatr)</span>
+<span id="cb6-2"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
+<span id="cb6-3"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb6-4"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">988869862</span>)</span>
+<span id="cb6-6"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb6-7" aria-hidden="true" tabindex="-1"></a>n_samp <span class="ot">&lt;-</span> <span class="dv">100</span></span>
+<span id="cb6-8"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb6-8" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="fu">rchisq</span>(n_samp, <span class="at">df =</span> <span class="dv">3</span>),</span>
+<span id="cb6-9"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb6-9" aria-hidden="true" tabindex="-1"></a>             <span class="at">z =</span> <span class="fu">rbinom</span>(n_samp, <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.5</span>),</span>
+<span id="cb6-10"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb6-10" aria-hidden="true" tabindex="-1"></a>             <span class="at">y =</span> x <span class="sc">+</span> z <span class="sc">+</span> <span class="fu">rnorm</span>(n_samp, <span class="at">sd =</span> <span class="fl">1.1</span>))</span>
+<span id="cb6-11"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-12"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(df, <span class="at">file =</span> <span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"02-01-df.RData"</span>))</span></code></pre></div>
+<p>Suppose the estimation strategy is linear regression <span class="math inline"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-6-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msub&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x03B2;&lt;/mi&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/msub&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x03B2;&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;msub&gt;&lt;mi&gt;z&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x03B2;&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msub&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x03F5;&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;/math&gt;" role="presentation" style="font-size: 117%; position: relative;"><span id="MJXc-Node-50" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-51" class="mjx-mrow"><span id="MJXc-Node-52" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.006em;"><span id="MJXc-Node-53" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.216em; padding-bottom: 0.483em; padding-right: 0.006em;">y</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-54" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.27em;">i</span></span></span></span><span id="MJXc-Node-55" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.056em; padding-bottom: 0.323em;">=</span></span><span id="MJXc-Node-56" class="mjx-msubsup MJXc-space3"><span class="mjx-base" style="margin-right: -0.007em;"><span id="MJXc-Node-57" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.483em; padding-right: 0.007em;">β</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-58" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.377em; padding-bottom: 0.377em;">0</span></span></span></span><span id="MJXc-Node-59" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.323em; padding-bottom: 0.43em;">+</span></span><span id="MJXc-Node-60" class="mjx-msubsup MJXc-space2"><span class="mjx-base" style="margin-right: -0.007em;"><span id="MJXc-Node-61" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.483em; padding-right: 0.007em;">β</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-62" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.377em; padding-bottom: 0.323em;">1</span></span></span></span><span id="MJXc-Node-63" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.003em;"><span id="MJXc-Node-64" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.216em; padding-bottom: 0.27em; padding-right: 0.003em;">z</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-65" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.27em;">i</span></span></span></span><span id="MJXc-Node-66" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.323em; padding-bottom: 0.43em;">+</span></span><span id="MJXc-Node-67" class="mjx-msubsup MJXc-space2"><span class="mjx-base" style="margin-right: -0.007em;"><span id="MJXc-Node-68" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.483em; padding-right: 0.007em;">β</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-69" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.377em; padding-bottom: 0.323em;">2</span></span></span></span><span id="MJXc-Node-70" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-71" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.216em; padding-bottom: 0.27em;">x</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-72" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.27em;">i</span></span></span></span><span id="MJXc-Node-73" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.323em; padding-bottom: 0.43em;">+</span></span><span id="MJXc-Node-74" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-75" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.216em; padding-bottom: 0.27em;">ϵ</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-76" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.27em;">i</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>y</mi><mi>i</mi></msub><mo>=</mo><msub><mi>β</mi><mn>0</mn></msub><mo>+</mo><msub><mi>β</mi><mn>1</mn></msub><msub><mi>z</mi><mi>i</mi></msub><mo>+</mo><msub><mi>β</mi><mn>2</mn></msub><msub><mi>x</mi><mi>i</mi></msub><mo>+</mo><msub><mi>ϵ</mi><mi>i</mi></msub></math></span></span><script type="math/tex" id="MathJax-Element-6">y_i = \beta_0 + \beta_1 z_i + \beta_2 x_i + \epsilon_i</script></span> with heteroskedasticity-robust HC2 standard errors, and the coefficient of interest is <span class="math inline"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-7-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msub&gt;&lt;mi&gt;&amp;#x03B2;&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;/math&gt;" role="presentation" style="font-size: 117%; position: relative;"><span id="MJXc-Node-77" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-78" class="mjx-mrow"><span id="MJXc-Node-79" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.007em;"><span id="MJXc-Node-80" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.483em; padding-right: 0.007em;">β</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-81" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.377em; padding-bottom: 0.323em;">1</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>β</mi><mn>1</mn></msub></math></span></span><script type="math/tex" id="MathJax-Element-7">\beta_1</script></span>. Perform 1000 reassignments and determine what proportion of them reveal <span class="math inline"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-8-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msub&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mover&gt;&lt;mi&gt;&amp;#x03B2;&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;&amp;#x005E;&lt;/mo&gt;&lt;/mover&gt;&lt;/mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;/math&gt;" role="presentation" style="font-size: 117%; position: relative;"><span id="MJXc-Node-82" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-83" class="mjx-mrow"><span id="MJXc-Node-84" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-85" class="mjx-texatom"><span id="MJXc-Node-86" class="mjx-mrow"><span id="MJXc-Node-87" class="mjx-munderover"><span class="mjx-stack"><span class="mjx-over" style="height: 0.213em; padding-bottom: 0.06em; padding-left: 0.149em;"><span id="MJXc-Node-89" class="mjx-mo" style="vertical-align: top;"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.43em; padding-bottom: 0.323em;">^</span></span></span><span class="mjx-op"><span id="MJXc-Node-88" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.483em; padding-right: 0.007em;">β</span></span></span></span></span></span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.36em; padding-right: 0.071em;"><span id="MJXc-Node-90" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.377em; padding-bottom: 0.323em;">1</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mrow class="MJX-TeXAtom-ORD"><mover><mi>β</mi><mo stretchy="false">^</mo></mover></mrow><mn>1</mn></msub></math></span></span><script type="math/tex" id="MathJax-Element-8">\hat{\beta}_1</script></span> that is statistically significant at <span class="math inline"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-9-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;&amp;#x03B1;&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;0.05&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="font-size: 117%; position: relative;"><span id="MJXc-Node-91" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-92" class="mjx-mrow"><span id="MJXc-Node-93" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.216em; padding-bottom: 0.27em;">α</span></span><span id="MJXc-Node-94" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.056em; padding-bottom: 0.323em;">=</span></span><span id="MJXc-Node-95" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.377em; padding-bottom: 0.377em;">0.05</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>α</mi><mo>=</mo><mn>0.05</mn></math></span></span><script type="math/tex" id="MathJax-Element-9">\alpha = 0.05</script></span>.</p>
+<div class="sourceCode" id="cb7"><button type="button" class="copy-to-clipboard-button" title="Copy to clipboard" aria-label="Copy to clipboard"><i class="fa fa-copy"></i></button><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-1" aria-hidden="true" tabindex="-1"></a>n_sims <span class="ot">&lt;-</span> <span class="dv">1000</span></span>
+<span id="cb7-2"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-2" aria-hidden="true" tabindex="-1"></a>alpha <span class="ot">&lt;-</span> <span class="fl">0.05</span></span>
+<span id="cb7-3"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-3" aria-hidden="true" tabindex="-1"></a>true_te <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb7-4"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-5" aria-hidden="true" tabindex="-1"></a>is_stat_sig <span class="ot">&lt;-</span> <span class="fu">vector</span>(<span class="st">"logical"</span>, n_sims) <span class="co"># Storage</span></span>
+<span id="cb7-6"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(idx <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n_sims){</span>
+<span id="cb7-8"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-8" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb7-9"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Re-assign treatment and recalculate outcomes n_sims times:</span></span>
+<span id="cb7-10"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># (Note: conditions on original x in df, but not original y.)</span></span>
+<span id="cb7-11"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-11" aria-hidden="true" tabindex="-1"></a>  df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">z_tmp =</span> <span class="fu">rbinom</span>(n_samp, <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.5</span>),</span>
+<span id="cb7-12"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-12" aria-hidden="true" tabindex="-1"></a>                      <span class="at">y_tmp =</span> true_te <span class="sc">*</span> z_tmp <span class="sc">+</span> x <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">100</span>, <span class="at">sd =</span> <span class="fl">1.1</span>))</span>
+<span id="cb7-13"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-13" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb7-14"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Estimation:</span></span>
+<span id="cb7-15"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-15" aria-hidden="true" tabindex="-1"></a>  lm_out <span class="ot">&lt;-</span> <span class="fu">lm_robust</span>(y_tmp <span class="sc">~</span> z_tmp <span class="sc">+</span> x, <span class="at">data =</span> df)</span>
+<span id="cb7-16"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-16" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb7-17"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-17" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Store p-value:</span></span>
+<span id="cb7-18"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-18" aria-hidden="true" tabindex="-1"></a>  stat_sig_tmp <span class="ot">&lt;-</span> lm_out<span class="sc">$</span>p.value[<span class="st">"z_tmp"</span>]</span>
+<span id="cb7-19"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-19" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb7-20"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-20" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Store whether true effect is 'detected':</span></span>
+<span id="cb7-21"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-21" aria-hidden="true" tabindex="-1"></a>  is_stat_sig[idx] <span class="ot">&lt;-</span> (stat_sig_tmp <span class="sc">&lt;=</span> alpha)</span>
+<span id="cb7-22"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-22" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb7-23"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-24"><a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#cb7-24" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(is_stat_sig)</span></code></pre></div>
+<pre><code>## [1] 0.995</code></pre>
+<p>So the probability of detecting the true average treatment effect of 1 is about 0.995. This is high power comes largely from the strongly predictive nature of the covariate <code>x</code>. Note that a naïve formula-based approach that ignores the data generating process estimates the power to be roughly 0.45.</p>
+</div>
+</div>
+<div id="balance-checking" class="section level2" number="2.6">
+<h2 class="hasAnchor"><span class="header-section-number">2.6</span> Balance Checking<a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#balance-checking" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To increase our certainty that our treatment and control conditions are balanced on predictive covariates, we compare the distributions of covariates. For example, in <span class="citation">Moore et al. (<a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#ref-mooganmin22" role="doc-biblioref">2022</a>)</span>, we describe</p>
+<blockquote>
+<p>the median absolute deviation (MAD) of appointment dates is about 0.15 days (about 3.5 hours) or less in 99% of the trios. In other words, the medians of the treatment and control groups tend to vary by much less than a day across the months and Service Centers.</p>
+</blockquote>
+
+</div>
+</div>
+<h3>References<a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-moore12" class="csl-entry">
+Moore, Ryan T. 2012. <span>“Multivariate Continuous Blocking to Improve Political Science Experiments.”</span> <em>Political Analysis</em> 20 (4): 460–79.
+</div>
+<div id="ref-mooganmin22" class="csl-entry">
+Moore, Ryan T., Katherine N. Gan, Karissa Minnich, and David Yokum. 2022. <span>“Anchor Management: A Field Experiment to Encourage Families to Meet Critical Program Deadlines.”</span> <em>Journal of Public Policy</em>.
+</div>
+</div>
+<div class="footnotes">
+<hr>
+<ol start="1">
+<li id="fn1"><p>We randomize treatment assignment in
+experiments, and we often simulate in power analysis and randomization
+inference.<a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>An online power calculator is
+available from <a href="https://egap.shinyapps.io/Power_Calculator/">EGAP</a>, e.g.<a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/design.html#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/getting-started.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="file:///C:/Users/jack.crum/Documents/LAB-SOP-experiments/_book/implementation.html" class="navigation navigation-next " aria-label="Next page" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="./2 Design _ SOPs for The Lab @ DC_files/app.min.js.download"></script>
+<script src="./2 Design _ SOPs for The Lab @ DC_files/clipboard.min.js.download"></script>
+<script src="./2 Design _ SOPs for The Lab @ DC_files/plugin-search.js.download"></script>
+<script src="./2 Design _ SOPs for The Lab @ DC_files/plugin-sharing.js.download"></script>
+<script src="./2 Design _ SOPs for The Lab @ DC_files/plugin-fontsettings.js.download"></script>
+<script src="./2 Design _ SOPs for The Lab @ DC_files/plugin-bookdown.js.download"></script>
+<script src="./2 Design _ SOPs for The Lab @ DC_files/jquery.highlight.js.download"></script>
+<script src="./2 Design _ SOPs for The Lab @ DC_files/plugin-clipboard.js.download"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+
+
+</body></html>
